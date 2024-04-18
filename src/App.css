@@ -1,38 +1,123 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Marcellus&display=swap');
+
+h1,h2,h3,h4,h5,h6{
+  font-family: "Marcellus", serif;
+}
+
+*{
+  font-family: "Inter", sans-serif;
+}
+
+:root{
+  --background-color:#F1F1F0;
+  --primary-color:#F0A76F;
+  --secondary-color:#0D6EFD;
+  --state-info-color:#2F80ED;
+  --state-success-color:#27AE60;
+  --state-warning-color:#E2B93B;
+  --state-error-color:#EB5757;
+  --black1-color:#000000;
+  --black2-color:#1D1D1D;
+  --black3-color:#282828;
+  --white-color:#FFFFFF;
+  --gray1-color:#333333;
+  --gray2-color:#4F4F4F;
+  --gray3-color:#828282;
+  --gray4-color:#BDBDBD;
+  --gray5-color:#E0E0E0;
+  --accent-color:#F1F1F0;
+}
+
+
+
+.dot-rect {
+  transition: all 0.9s ease;
+}
+
+.active-dot .dot-rect {
+  fill: #17183B; 
+}
+
+.inactive-dot .dot-rect {
+  fill: white; 
+}
+
+
+
+.carousel-heading {
+  font-size: 54px;
+  color: var(--white-color);
+}
+
+.carousel-description {
+  font-size: 18px;
+  color: var(--white-color);
+}
+
+.primary-btn{
+  background-color:var(--white-color);
+  color: var(--black1-color);
+  border: none;
+  padding: 10px 20px;
+  font-size: 12px;
+  transition: all 0.3s ease;
+}
+
+.primary-btn:hover{
+  background-color:var(--black1-color);
+  color: var(--white-color);
+}
+
+.primary-btn-two{
+  background-color:var(--black1-color);
+  color: var(--white-color);
+  border: none;
+  padding: 10px 20px;
+  font-size: 12px;
+  transition: all 0.3s ease;
+}
+
+.primary-btn-two:hover {
+  text-decoration: underline;
+}
+
+.secondary-btn {
+  background-color: var(--white-color);
+  color: var(--black1-color);
+  border: none;
+  padding: 10px 20px;
+  font-size: 12px;
+  transition: all 0.3s ease; 
+  transition: text-decoration 0.3s ease; 
+}
+
+.secondary-btn:hover {
+  text-decoration: underline;
+}
+
+.home-services{
   text-align: center;
+  font-size: 16px;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.home-services h4{
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.category-button{
+  position: absolute;
+  bottom:25px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media screen and (max-width: 768px) {
+  .carousel-heading {
+    font-size: 42px;
   }
 }

@@ -30,8 +30,8 @@ const Header = () => {
                         <Nav.Link as={NavLink} to="/contactus" className='nav_menu'>CONTACT</Nav.Link>
                     </Nav>
                     <Nav className='d-flex flex-row gap-2'>
-                        <NavLink as={NavLink} to="/wishList" className='nav_menu'>WISHLIST ({0})</NavLink>
-                        <NavLink as={NavLink} to="/mycart" className='nav_menu'>CART ({0})</NavLink>
+                        <NavLink as={NavLink} to="/wishlist" className='nav_menu'>WISHLIST ({1})</NavLink>
+                        <NavLink as={NavLink} to="/mycart" className='nav_menu'>CART ({1})</NavLink>
                         <AiOutlineUser className='mt-1' />
                     </Nav>
                 </Navbar.Collapse>

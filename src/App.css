@@ -1,7 +1,3 @@
-.App {
-  text-align: center;
-}
-
 @import "react-alice-carousel/lib/alice-carousel.css";
 @import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Marcellus&display=swap');
@@ -618,4 +614,18 @@ a.nav_menu.active {
   .aboutus-heading {
     font-size: 6vw;
   }
+}
+
+.catorgory-hero-title {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 84px;
+  font-weight: bold;
+  color: var(--accent-color);
+  -webkit-text-stroke: 2px var(--primary-color);
+  /* WebKit browsers */
+  text-stroke: 2px var(--primary-color);
+  /* Standard */
 }

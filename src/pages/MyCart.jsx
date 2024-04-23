@@ -99,9 +99,9 @@ const MyCart = () => {
                     {similarProduct.map((product, index) => (
                         <div key={index} className="col-6 col-sm-6 productList_product position-relative">
                             <div className="">
-                                <img src={product.image} alt="product" width="100%" />
-                                <h6 className="">{product.productName.toUpperCase()}</h6>
-                                <h6 className="list product_title">$ {product.cost.toFixed(2)}</h6>
+                                <img src={product?.image} alt="product" width="100%" />
+                                <h6 className="">{product?.name.toUpperCase()}</h6>
+                                <h6 className="list product_title">$ {product?.price.toFixed(2)}</h6>
                             </div>
                             <div className="d-flex">
                                 <button className="btn productList_btn">Add Cart</button>

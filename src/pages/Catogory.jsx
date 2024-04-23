@@ -53,7 +53,7 @@ function Catogory() {
         <div className='container my-5'>
             <div className='row'>
             {filteredCatorgory.products.map((product) => (
-                        <div key={product.product_id} className='col-md-3 d-flex flex-column align-items-center p-4 product-card'>
+                        <div key={product.product_id} className='col-lg-3 col-6 col-md-4 d-flex flex-column align-items-center p-4 product-card'>
                             {/* <Link className='text-decoration-none' to={`/product/${product.product_id}`}> */}
                                 <div className='d-flex flex-column'>
                                     <img

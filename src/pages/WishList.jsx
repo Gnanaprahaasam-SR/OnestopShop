@@ -1,4 +1,4 @@
-import product1 from "../images/common/similarProduct1.png";
+import product1 from "../images/common/similarProduct2.png";
 import "../App.css";
 import ProductCarousel from "./ProductSlide";
 import { BsFillHeartFill } from "react-icons/bs";
@@ -114,12 +114,12 @@ const WishList = () => {
                     <button className="shadow-sm  viewProduct d-none d-sm-block ">VIEW ALL PRODUCTS</button>
                 </div>
                 <div className=" row d-block d-sm-none d-flex">
-                    {similarProduct.map((product, index) => (
+                    {similarProduct?.map((product, index) => (
                         <div key={index} className="col-6 col-sm-6 productList_product position-relative">
                             <div className="">
                                 <img src={product.image} alt="product" width="100%" />
-                                <h6 className="">{product.productName.toUpperCase()}</h6>
-                                <h6 className="list product_title">$ {product.cost.toFixed(2)}</h6>
+                                <h6 className="">{product?.name?.toUpperCase()}</h6>
+                                <h6 className="list product_title">$ {product?.price.toFixed(2)}</h6>
                             </div>
                             <div className="d-flex">
                                 <button className="btn productList_btn">Add Cart</button>

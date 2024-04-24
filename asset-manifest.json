@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/OnestopShop/static/css/main.8ea19591.css",
-    "main.js": "/OnestopShop/static/js/main.203bd483.js",
+    "main.css": "/OnestopShop/static/css/main.8f3bb2c6.css",
+    "main.js": "/OnestopShop/static/js/main.416afd77.js",
     "static/media/HomeBannerBackground2.png": "/OnestopShop/static/media/HomeBannerBackground2.0d6328813120749abd22.png",
     "static/media/HeroImageBg1.png": "/OnestopShop/static/media/HeroImageBg1.7fcdf09b4695e625389d.png",
     "static/media/HeroImageBg4.png": "/OnestopShop/static/media/HeroImageBg4.9e22df30d8a977564a2b.png",
@@ -20,24 +20,25 @@
     "static/media/CollectionsImage2.png": "/OnestopShop/static/media/CollectionsImage2.8356fdfbf5f1a4b3c560.png",
     "static/media/homeTextiles.png": "/OnestopShop/static/media/homeTextiles.3d1f46a179a6aeda7ef2.png",
     "static/media/1 (6).png": "/OnestopShop/static/media/1 (6).c874d0553ef0c1c5316f.png",
-    "static/media/1 (4).png": "/OnestopShop/static/media/1 (4).ebbc94f796f0c59893d4.png",
+    "static/media/1 (4).png": "/OnestopShop/static/media/1 (4).81362237ee24750f2330.png",
     "static/media/1 (13).png": "/OnestopShop/static/media/1 (13).8208f844df25dce85390.png",
     "static/media/carouselImage2.png": "/OnestopShop/static/media/carouselImage2.3e771ace884f072e20d1.png",
-    "static/media/1 (17).png": "/OnestopShop/static/media/1 (17).8208f844df25dce85390.png",
+    "static/media/1 (17).png": "/OnestopShop/static/media/1 (17).8f7a345960cf5799927a.png",
     "static/media/1 (1).png": "/OnestopShop/static/media/1 (1).def3150554062a258c4d.png",
     "static/media/1 (7).png": "/OnestopShop/static/media/1 (7).f1599ef1815e23e576c7.png",
-    "static/media/1 (16).png": "/OnestopShop/static/media/1 (16).d99c156fcd3298b2a6a3.png",
+    "static/media/1 (16).png": "/OnestopShop/static/media/1 (16).e797a73475c97f7f5027.png",
     "static/media/1 (19).png": "/OnestopShop/static/media/1 (19).0abc8392da96f9395d02.png",
-    "static/media/1 (20).png": "/OnestopShop/static/media/1 (20).96c92854ad05cfb0e53f.png",
+    "static/media/1 (20).png": "/OnestopShop/static/media/1 (20).cea7f5203d44ae7f675d.png",
     "static/media/1 (2).png": "/OnestopShop/static/media/1 (2).4eb17bceb9ade18a1dac.png",
     "static/media/1 (11).png": "/OnestopShop/static/media/1 (11).de4e8b572a970a5a2567.png",
-    "static/media/1 (3).png": "/OnestopShop/static/media/1 (3).a730330a8f24c91eac48.png",
+    "static/media/1 (3).png": "/OnestopShop/static/media/1 (3).29ca1b0acf37ca484466.png",
     "static/media/1 (12).png": "/OnestopShop/static/media/1 (12).5dfcbb02736061a5006d.png",
     "static/media/1 (10).png": "/OnestopShop/static/media/1 (10).7030586027c84e246e37.png",
     "static/media/Product1.png": "/OnestopShop/static/media/Product1.9198358feaf18fe7734a.png",
-    "static/media/1 (8).png": "/OnestopShop/static/media/1 (8).1c8c56a0efcfc04404bc.png",
-    "static/media/1 (18).png": "/OnestopShop/static/media/1 (18).352ce9bb53c8ae691f52.png",
+    "static/media/1 (8).png": "/OnestopShop/static/media/1 (8).b02c2f19450f7f94782e.png",
     "static/media/1 (5).png": "/OnestopShop/static/media/1 (5).295e15169f9e9b45ebbc.png",
+    "static/media/1 (18).png": "/OnestopShop/static/media/1 (18).81f6b2253afc82d230da.png",
+    "static/media/1 (9).png": "/OnestopShop/static/media/1 (9).de2e7ce03ed046c8e359.png",
     "static/media/Image1.png": "/OnestopShop/static/media/Image1.fdd0115c4da741e0afe7.png",
     "static/media/1 (15).png": "/OnestopShop/static/media/1 (15).e6e576a37ffd23295455.png",
     "static/media/HomeBanner2.png": "/OnestopShop/static/media/HomeBanner2.1ed1089e4af9e896fa18.png",
@@ -49,7 +50,6 @@
     "static/media/officeSupplies.png": "/OnestopShop/static/media/officeSupplies.9f579d6f20347f0124fa.png",
     "static/media/Image2.png": "/OnestopShop/static/media/Image2.5aa9b2099cb66b2c634d.png",
     "static/media/bestSelling.png": "/OnestopShop/static/media/bestSelling.a874a8bc6aef9ea9b5cc.png",
-    "static/media/1 (9).png": "/OnestopShop/static/media/1 (9).de2e7ce03ed046c8e359.png",
     "static/media/similarProduct3.png": "/OnestopShop/static/media/similarProduct3.cea7f5203d44ae7f675d.png",
     "static/media/similarProduct1.png": "/OnestopShop/static/media/similarProduct1.e3a3e7810ea9092d2c2c.png",
     "static/media/toys.png": "/OnestopShop/static/media/toys.7a09594b8bb2e78bdab3.png",
@@ -77,11 +77,11 @@
     "index.html": "/OnestopShop/index.html",
     "static/media/akar-icons_calendar.svg": "/OnestopShop/static/media/akar-icons_calendar.947b5045b551d41a46696a244b943df6.svg",
     "static/media/akar-icons_arrow-cycle.svg": "/OnestopShop/static/media/akar-icons_arrow-cycle.4e0e726ae347813b32d114986ed5b74d.svg",
-    "main.8ea19591.css.map": "/OnestopShop/static/css/main.8ea19591.css.map",
-    "main.203bd483.js.map": "/OnestopShop/static/js/main.203bd483.js.map"
+    "main.8f3bb2c6.css.map": "/OnestopShop/static/css/main.8f3bb2c6.css.map",
+    "main.416afd77.js.map": "/OnestopShop/static/js/main.416afd77.js.map"
   },
   "entrypoints": [
-    "static/css/main.8ea19591.css",
-    "static/js/main.203bd483.js"
+    "static/css/main.8f3bb2c6.css",
+    "static/js/main.416afd77.js"
   ]
 }

@@ -56,7 +56,7 @@ function ProductSlider({ data }) {
                 >
                     {data?.products.map((product) => (
                         <div key={product.product_id} className='d-flex flex-column align-items-center p-4 product-card'>
-                            {/* <Link className='text-decoration-none' to={`/product/${product.product_id}`}> */}
+                            <Link className='text-decoration-none' to={`/product`}>
                                 <div className='d-flex flex-column'>
                                     <img
                                         src={product.image}
@@ -66,13 +66,14 @@ function ProductSlider({ data }) {
                                     />
                                     <div className="product-btns ">
                                         <button className="secondary-btn">ADD TO CART</button>
-                                        <button className="product-icon"><img src={WishListIcon} alt='WishListIcon'/></button>
-                                        <button className="product-icon"><img src={ViewIcon} alt='ViewIcon'/></button>
+                                        <button className="product-icon"><img src={WishListIcon} alt='WishListIcon' /></button>
+                                        <button className="product-icon"><img src={ViewIcon} alt='ViewIcon' /></button>
                                     </div>
 
                                     <h5 className='product-title'>{product.name}</h5>
                                     <p className='product-price'>{product.price}</p>
                                 </div>
+                            </Link>
                         </div>
                     ))}
                 </Carousel>

@@ -7,6 +7,7 @@ import paypal from "../images/paypal1.png";
 import visa from "../images/visa1.png";
 import apay from "../images/Apay.png";
 import content from  "../content.js";
+import ProductSlider from "../components/ProductSlider.jsx";
 
 const MyCart = () => {
     const similarProduct = content.similarProduct;
@@ -91,7 +92,7 @@ const MyCart = () => {
 
             </div>
             <div className="container py-5">
-                <div className=" d-flex flex-wrap justify-content-between ">
+                {/* <div className=" d-flex flex-wrap justify-content-between ">
                     <h4 className="">SIMILAR PRODUCTS</h4>
                     <button className="shadow-sm  viewProduct d-none d-sm-block ">VIEW ALL PRODUCTS</button>
                 </div>
@@ -110,7 +111,9 @@ const MyCart = () => {
                         </div>
                     ))}
                 </div>
-                <ProductCarousel />
+                <ProductCarousel /> */}
+                <ProductSlider data={similarProduct} />
+
             </div>
 
         </div>

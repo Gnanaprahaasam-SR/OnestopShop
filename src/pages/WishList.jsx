@@ -8,6 +8,7 @@ import visa from "../images/visa1.png";
 import apay from "../images/Apay.png";
 import content from "../content.js";
 import { useState } from "react";
+import ProductSlider from "../components/ProductSlider.jsx";
 
 const WishList = () => {
     const similarProduct = content.similarProduct;
@@ -109,11 +110,11 @@ const WishList = () => {
 
             </div>
             <div className="container py-5">
-                <div className=" d-flex flex-wrap justify-content-between ">
+                {/* <div className=" d-flex flex-wrap justify-content-between ">
                     <h4 className="">SIMILAR PRODUCTS</h4>
                     <button className="shadow-sm  viewProduct d-none d-sm-block ">VIEW ALL PRODUCTS</button>
-                </div>
-                <div className=" row d-block d-sm-none d-flex">
+                </div> */}
+                {/* <div className=" row d-block d-sm-none d-flex">
                     {similarProduct?.map((product, index) => (
                         <div key={index} className="col-6 col-sm-6 productList_product position-relative">
                             <div className="">
@@ -127,8 +128,8 @@ const WishList = () => {
                             </div>
                         </div>
                     ))}
-                </div>
-                <ProductCarousel />
+                </div> */}
+                <ProductSlider data={similarProduct} />
             </div>
 
         </div>

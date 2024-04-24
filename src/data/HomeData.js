@@ -55,7 +55,7 @@ const homeData = {
             description:"Scelerisque duis aliquam qui lorem ipsum dolor amet, consectetur adipiscing elit. ",
             image:CarouselImage1,
             button:"SHOP COLLECTION",
-            link:"/collections",
+            link:"/",
             backgroundRadialGradient:[
                 "#EFBB92",
                 "#F0A76F"
@@ -65,7 +65,7 @@ const homeData = {
             description:"Scelerisque duis aliquam qui lorem ipsum dolor amet, consectetur adipiscing elit. ",
             image:CarouselImage2,
             button:"SHOP COLLECTION",
-            link:"/collections",
+            link:"/",
             backgroundRadialGradient:[
                 "#E1E5E4",
                 "#C3C2BA"
@@ -75,7 +75,7 @@ const homeData = {
             description:"Scelerisque duis aliquam qui lorem ipsum dolor amet, consectetur adipiscing elit. ",
             image:CarouselImage3,
             button:"SHOP COLLECTION",
-            link:"/collections",
+            link:"/",
             backgroundRadialGradient:[
                 "#C8B6A5",
                 "#B9A793"
@@ -133,19 +133,19 @@ const homeData = {
                 title:"Classic winter collection",
                 description:"Dignissim lacus, turpis ut suspendisse vel tellus. Turpis purus, gravida orci, fringilla a. Ac sed eu fringilla odio mi. Consequat pharetra at magna imperdiet cursus ac faucibus sit libero. Ultricies quam nunc, lorem sit lorem urna, pretium aliquam ut. In vel, quis donec dolor id in. Pulvinar commodo mollis diam sed facilisis at cursus imperdiet cursus ac faucibus sit faucibus sit libero.",
                 button:"SHOP COLLECTION",
-                link:"/collections"
+                link:"/"
             },{
                 image:CollectionsImage2,
                 title:"Unique Collections",
                 description:"Dignissim lacus, turpis ut suspendisse vel tellus. Turpis purus, gravida orci, fringilla a. Ac sed eu fringilla odio mi. Consequat pharetra at magna imperdiet cursus ac faucibus sit libero. Ultricies quam nunc, lorem sit lorem urna, pretium aliquam ut. In vel, quis donec dolor id in. Pulvinar commodo mollis diam sed facilisis at cursus imperdiet cursus ac faucibus sit faucibus sit libero.",
                 button:"SHOP COLLECTION",
-                link:"/collections"
+                link:"/"
             },{
                 image:CollectionsImage1,
                 title:"Classic winter collection",
                 description:"Dignissim lacus, turpis ut suspendisse vel tellus. Turpis purus, gravida orci, fringilla a. Ac sed eu fringilla odio mi. Consequat pharetra at magna imperdiet cursus ac faucibus sit libero. Ultricies quam nunc, lorem sit lorem urna, pretium aliquam ut. In vel, quis donec dolor id in. Pulvinar commodo mollis diam sed facilisis at cursus imperdiet cursus ac faucibus sit faucibus sit libero.",
                 button:"SHOP COLLECTION",
-                link:"/collections"
+                link:"/"
             },
         ]
 
@@ -153,7 +153,7 @@ const homeData = {
     BestSellingItemsSection:{
         title:"BEST SELLING ITEMS",
         button:"VIEW ALL PRODUCTS",
-        link:"/products",
+        link:"/product",
         products:[
             {
                 product_id:"1",
@@ -205,12 +205,12 @@ const homeData = {
         title:"BECOME A SELLER",
         description:"Scelerisque duis aliquam qui lorem ipsum dolor amet, consectetur adipiscing elit.",
         button:"JOIN US",
-        link:"/joinus"
+        link:"/"
     },
     YouMayAlsoLikeSection:{
         title:"YOU MAY ALSO LIKE",
         button:"VIEW ALL PRODUCTS",
-        link:"/products",
+        link:"/product",
         products:[
             {
                 product_id:"1",
@@ -238,7 +238,7 @@ const homeData = {
     ReadBlogPostsSection:{
         title:"READ BLOG POSTS",
         button:"READ ALL BLOG POSTS",
-        link:"/Blogs",
+        link:"/",
         blogs:[
             {
                 image:BlogImage1,
@@ -276,7 +276,9 @@ const homeData = {
             image:MarqueeLogo5,
         },
     ],
-    FollowUs:[
+    FollowUs:{
+        title:"FOLLOW US",
+        data:[
         {
             image:FollowUsImage1,
             icon:<Instagram/>,
@@ -303,7 +305,7 @@ const homeData = {
             name:"VISIT INSTAGRAM"
         },
     ]
-
+    }
 }
 
 export {homeData};

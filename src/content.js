@@ -22,32 +22,37 @@ const content = {
         shippingInformation: ["Standard shipping: 3-5 business days", "Express shipping options available at checkout"],
         features: ["Distressed detailing for a rugged look", "Button-up front closure with engraved metal buttons", "Two side pockets for added functionality", "Adjustable buttoned cuffs for a personalized fit", "Back waist tabs for customizable styling"],
     },
-    similarProduct: [
-        {
-            product_id: "1",
-            image: product1,
-            name: "Dark florish onepiece",
-            price: 95.00
-        },
-        {
-            product_id: "2",
-            image: product2,
-            name: "florish onepiece",
-            price: 95.00
-        },
-        {
-            product_id: "3",
-            image: product3,
-            name: "Skirt",
-            price: 58.00
-        },
-        {
-            product_id: "4",
-            image: product4,
-            name: "Baggy Jeans",
-            price: 69.00
-        }
-    ]
+    similarProduct: {
+        title:"SIMILAR PRODUCTS",
+        button:"VIEW ALL PRODUCTS",
+        link:"/product",
+        products: [
+            {
+                product_id: "1",
+                image: product1,
+                name: "Dark florish onepiece",
+                price: "$95.00"
+            },
+            {
+                product_id: "2",
+                image: product2,
+                name: "florish onepiece",
+                price: "$95.00"
+            },
+            {
+                product_id: "3",
+                image: product3,
+                name: "Skirt",
+                price: "$58.00"
+            },
+            {
+                product_id: "4",
+                image: product4,
+                name: "Baggy Jeans",
+                price: "$69.00"
+            }
+        ],
+    }
 }
 
 export default content;

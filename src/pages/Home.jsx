@@ -273,7 +273,8 @@ const Home = () => {
                     </Marquee>
                 </div>
                 <div className="row my-5">
-                    {FollowUs.map((item, index) => (
+                    <h5 className='text-center'>{FollowUs?.title}</h5>
+                    {FollowUs?.data?.map((item, index) => (
                         <div className="col-md-2 col-6 my-3" key={index}>
                             <div className="follow-us-container" >
                                 <img src={item.image} alt={`Follow Us ${index + 1}`} className="img-fluid" />

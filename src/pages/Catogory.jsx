@@ -1,9 +1,13 @@
-import React from 'react'
-import { CategoryData } from '../data/CatogoryData'
+import React, { useEffect, useState } from 'react';
+import { CategoryData } from '../data/CatogoryData';
 import { makeStyles } from '@material-ui/core/styles';
 import { useParams } from 'react-router-dom';
-import WishListIcon from "../assets/WishListIcon.svg"
-import ViewIcon from "../assets/ViewIcon.svg"
+import WishListIcon from "../assets/WishListIcon.svg";
+import ViewIcon from "../assets/ViewIcon.svg";
+import Pagination from '@mui/material/Pagination';
+import Stack from '@mui/material/Stack';
+
+
 
 const useStyles = makeStyles(() => ({
     indicatorContainer: {
@@ -31,52 +35,107 @@ const useStyles = makeStyles(() => ({
     },
 }));
 
-function Catogory() {
+const Category = ({ title, backgroundImage, productsCategories }) => {
     const classes = useStyles();
+    const [selectedCategory, setSelectedCategory] = useState('');
+    const [page, setPage] = useState(1);
+    const productsPerPage = 16;
 
-    const { categoryKey } = useParams();
-    const filteredCatorgory = CategoryData.find(Catogory => Catogory.categoryKey === categoryKey);
-    console.log(filteredCatorgory)
+    useEffect(() => {
+        const defaultCategory = Object.keys(productsCategories)[0];
+        setSelectedCategory(defaultCategory);
+    }, [productsCategories]);
 
-    if (!filteredCatorgory) {
-        return <div>No data found for the specified title.</div>;
-      }
+    const handleCategoryChange = (category) => {
+        setSelectedCategory(category);
+    };
+
+    const handleChangePage = (event, value) => {
+        setPage(value);
+    };
+
+    const indexOfLastProduct = page * productsPerPage;
+    const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
+    const currentProducts = productsCategories[selectedCategory]?.slice(indexOfFirstProduct, indexOfLastProduct);
 
     return (
         <>
-        <div className={classes.carouselContainer} style={{ background: "var(--accent-color)" }}>
-            <div className='p-3 position-relative'>
-            <img src={filteredCatorgory.backgroundImage} alt={filteredCatorgory.title} width="100%" />
-            <p className='catorgory-hero-title'>{filteredCatorgory.title}</p>
+            <div className={classes.carouselContainer} style={{ background: "var(--accent-color)" }}>
+                <div className='p-3 position-relative'>
+                    <img src={backgroundImage} alt={title} width="100%" />
+                    <p className='category-hero-title'>{title}</p>
+                </div>
             </div>
-        </div>
-        <div className='container my-5'>
-            <div className='row'>
-            {filteredCatorgory.products.map((product) => (
-                        <div key={product.product_id} className='col-lg-3 col-6 col-md-4 d-flex flex-column align-items-center p-4 product-card'>
-                            {/* <Link className='text-decoration-none' to={`/product/${product.product_id}`}> */}
-                                <div className='d-flex flex-column'>
-                                    <img
-                                        src={product.image}
-                                        alt={product.name}
-                                        width="100%"
-                                        height="100%"
-                                    />
-                                    <div className="product-btns ">
-                                        <button className="secondary-btn">ADD TO CART</button>
-                                        <button className="product-icon"><img src={WishListIcon} alt='WishListIcon'/></button>
-                                        <button className="product-icon"><img src={ViewIcon} alt='ViewIcon'/></button>
-                                    </div>
-
-                                    <h5 className='product-title'>{product.name}</h5>
-                                    <p className='product-price'>{product.price}</p>
+            
+            <div className='container my-5'>
+                <div className='col'>
+                    <div className='row'>
+                        {Object.keys(productsCategories).map(category => (
+                            <div key={category} className='col-auto me-3'>
+                                <h4 className={`${selectedCategory === category ? 'category-subtitles-active' : 'category-subtitles'}`}
+                                    onClick={() => handleCategoryChange(category)}>
+                                    {category.replace(/([A-Z])/g, ' $1').trim()}
+                                </h4>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+                <div className='row'>
+                    {currentProducts && currentProducts.map(product => (
+                        <div key={product.product_id} className='col-md-4 col-lg-3 col-6 d-flex flex-column align-items-center p-4 product-card'>
+                            <div className='d-flex flex-column'>
+                                <img
+                                    src={product.image}
+                                    alt={product.name}
+                                    width="100%"
+                                    height="100%"
+                                />
+                                <div className="product-btns ">
+                                    <button className="secondary-btn">ADD TO CART</button>
+                                    <button className="product-icon"><img src={WishListIcon} alt='WishListIcon'/></button>
+                                    <button className="product-icon"><img src={ViewIcon} alt='ViewIcon'/></button>
                                 </div>
+                                <h5 className='product-title'>{product.name}</h5>
+                                <p className='product-price'>{product.price}</p>
+                            </div>
                         </div>
                     ))}
                 </div>
-        </div>
+                <div className='d-flex align-items-center justify-content-center'>
+                <Stack spacing={2} justifyContent="center" mt={3}>
+                    <Pagination
+                        count={Math.ceil(productsCategories[selectedCategory]?.length / productsPerPage)}
+                        page={page}
+                        shape="rounded"
+                        onChange={handleChangePage}
+                        color="primary"
+                    />
+                </Stack>
+                </div>
+            </div>
         </>
-    )
+    );
+};
+
+
+
+
+function CategoryPage() {
+    const classes = useStyles();
+    const { categoryKey } = useParams();
+    const filteredCategory = CategoryData.find(category => category.categoryKey === categoryKey);
+
+    if (!filteredCategory) {
+        return <div>No data found for the specified title.</div>;
+    }
+
+    return (
+        <Category
+            title={filteredCategory.title}
+            backgroundImage={filteredCategory.backgroundImage}
+            productsCategories={filteredCategory.productsCategories}
+        />
+    );
 }
 
-export default Catogory
+export default CategoryPage;

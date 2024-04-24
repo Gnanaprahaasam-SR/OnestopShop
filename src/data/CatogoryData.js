@@ -25,6 +25,27 @@ import Mens18 from "../assets/Mens/1 (18).png"
 import Mens19 from "../assets/Mens/1 (19).png"
 import Mens20 from "../assets/Mens/1 (20).png"
 
+import Womens1 from "../assets/Womens/1 (1).png"
+import Womens2 from "../assets/Womens/1 (2).png"
+import Womens3 from "../assets/Womens/1 (3).png"
+import Womens4 from "../assets/Womens/1 (4).png"
+import Womens5 from "../assets/Womens/1 (5).png"
+import Womens6 from "../assets/Womens/1 (6).png"
+import Womens7 from "../assets/Womens/1 (7).png"
+import Womens8 from "../assets/Womens/1 (8).png"
+import Womens9 from "../assets/Womens/1 (9).png"
+import Womens10 from "../assets/Womens/1 (10).png"
+import Womens11 from "../assets/Womens/1 (11).png"
+import Womens12 from "../assets/Womens/1 (12).png"
+import Womens13 from "../assets/Womens/1 (13).png"
+import Womens14 from "../assets/Womens/1 (14).png"
+import Womens15 from "../assets/Womens/1 (15).png"
+import Womens16 from "../assets/Womens/1 (16).png"
+import Womens17 from "../assets/Womens/1 (17).png"
+import Womens18 from "../assets/Womens/1 (18).png"
+import Womens19 from "../assets/Womens/1 (19).png"
+import Womens20 from "../assets/Womens/1 (20).png"
+
 
 import Kids1 from "../assets/Kids/1 (1).png"
 import Kids2 from "../assets/Kids/1 (2).png"
@@ -46,6 +67,28 @@ import Kids17 from "../assets/Kids/1 (17).png"
 import Kids18 from "../assets/Kids/1 (18).png"
 import Kids19 from "../assets/Kids/1 (19).png"
 import Kids20 from "../assets/Kids/1 (20).png"
+
+
+import HomeFurniture1 from "../assets/HomeFurniture/1 (1).png"
+import HomeFurniture2 from "../assets/HomeFurniture/1 (2).png"
+import HomeFurniture3 from "../assets/HomeFurniture/1 (3).png"
+import HomeFurniture4 from "../assets/HomeFurniture/1 (4).png"
+import HomeFurniture5 from "../assets/HomeFurniture/1 (5).png"
+import HomeFurniture6 from "../assets/HomeFurniture/1 (6).png"
+import HomeFurniture7 from "../assets/HomeFurniture/1 (7).png"
+import HomeFurniture8 from "../assets/HomeFurniture/1 (8).png"
+import HomeFurniture9 from "../assets/HomeFurniture/1 (9).png"
+import HomeFurniture10 from "../assets/HomeFurniture/1 (10).png"
+import HomeFurniture11 from "../assets/HomeFurniture/1 (11).png"
+import HomeFurniture12 from "../assets/HomeFurniture/1 (12).png"
+import HomeFurniture13 from "../assets/HomeFurniture/1 (13).png"
+import HomeFurniture14 from "../assets/HomeFurniture/1 (14).png"
+import HomeFurniture15 from "../assets/HomeFurniture/1 (15).png"
+import HomeFurniture16 from "../assets/HomeFurniture/1 (16).png"
+import HomeFurniture17 from "../assets/HomeFurniture/1 (17).png"
+import HomeFurniture18 from "../assets/HomeFurniture/1 (18).png"
+import HomeFurniture19 from "../assets/HomeFurniture/1 (19).png"
+import HomeFurniture20 from "../assets/HomeFurniture/1 (20).png"
 
 
 import Toys1 from "../assets/Toys/1 (1).png"
@@ -95,442 +138,659 @@ import OfficeSupplies20 from "../assets/OfficeSupplies/1 (20).png"
 
 const CategoryData = [
     {
-        title: "Clothing",
+        title: "HOME FURNITURE",
+        categoryKey: "homeFurniture",
+        backgroundImage: HeroImageBg4,
+        productsCategories: {
+            HomeFurniture: [
+                {
+                    product_id: "HomeFurniture1",
+                    image: HomeFurniture1,
+                    name: "Home Furniture",
+                    price: "$95.00"
+                }, {
+                    product_id: "Kids2",
+                    image: HomeFurniture2,
+                    name: "Home Furniture",
+                    price: "$95.00"
+                }, {
+                    product_id: "3",
+                    image: HomeFurniture3,
+                    name: "Home Furniture",
+                    price: "$58.00"
+                }, {
+                    product_id: "4",
+                    image: HomeFurniture4,
+                    name: "Home Furniture",
+                    price: "$69.00"
+                }, {
+                    product_id: "5",
+                    image: HomeFurniture5,
+                    name: "Home Furniture",
+                    price: "$69.00"
+                }, {
+                    product_id: "6",
+                    image: HomeFurniture6,
+                    name: "Home Furniture",
+                    price: "$69.00"
+                }, {
+                    product_id: "7",
+                    image: HomeFurniture7,
+                    name: "Home Furniture",
+                    price: "$69.00"
+                }, {
+                    product_id: "8",
+                    image: HomeFurniture8,
+                    name: "Home Furniture",
+                    price: "$69.00"
+                }, {
+                    product_id: "9",
+                    image: HomeFurniture9,
+                    name: "Home Furniture",
+                    price: "$69.00"
+                }, {
+                    product_id: "10",
+                    image: HomeFurniture10,
+                    name: "Home Furniture",
+                    price: "$69.00"
+                }, {
+                    product_id: "11",
+                    image: HomeFurniture11,
+                    name: "Home Furniture",
+                    price: "$69.00"
+                }, {
+                    product_id: "12",
+                    image: HomeFurniture12,
+                    name: "Home Furniture",
+                    price: "$69.00"
+                }, {
+                    product_id: "13",
+                    image: HomeFurniture13,
+                    name: "Home Furniture",
+                    price: "$69.00"
+                }, {
+                    product_id: "14",
+                    image: HomeFurniture14,
+                    name: "Home Furniture",
+                    price: "$69.00"
+                }, {
+                    product_id: "15",
+                    image: HomeFurniture15,
+                    name: "Home Furniture",
+                    price: "$69.00"
+                }, {
+                    product_id: "16",
+                    image: HomeFurniture16,
+                    name: "Home Furniture",
+                    price: "$69.00"
+                }, {
+                    product_id: "17",
+                    image: HomeFurniture17,
+                    name: "Home Furniture",
+                    price: "$69.00"
+                }, {
+                    product_id: "18",
+                    image: HomeFurniture18,
+                    name: "Home Furniture",
+                    price: "$69.00"
+                }, {
+                    product_id: "19",
+                    image: HomeFurniture19,
+                    name: "Home Furniture",
+                    price: "$69.00"
+                },
+                {
+                    product_id: "20",
+                    image: HomeFurniture20,
+                    name: "Home Furniture",
+                    price: "$69.00"
+                },
+            ]
+
+        }
+    },
+    {
+        title: "CLOTHING",
         categoryKey: "clothing",
-        backgroundImage:HeroImageBg1,
-        products:[
-            {
-                product_id:"1",
-                image:Mens1,
-                name:"Dark florish onepiece",
-                price:"$95.00"
-            },{
-                product_id:"2",
-                image:Mens2,
-                name:"Oversize t shirt",
-                price:"$95.00"
-            },{
-                product_id:"3",
-                image:Mens3,
-                name:"Skirt",
-                price:"$58.00"
-            },{
-                product_id:"4",
-                image:Mens4,
-                name:"Baggy Jeans",
-                price:"$69.00"
-            },{
-                product_id:"5",
-                image:Mens5,
-                name:"Baggy Jeans",
-                price:"$69.00"
-            },{
-                product_id:"6",
-                image:Mens6,
-                name:"Baggy Jeans",
-                price:"$69.00"
-            },{
-                product_id:"7",
-                image:Mens7,
-                name:"Baggy Jeans",
-                price:"$69.00"
-            },{
-                product_id:"8",
-                image:Mens8,
-                name:"Baggy Jeans",
-                price:"$69.00"
-            },{
-                product_id:"9",
-                image:Mens9,
-                name:"Baggy Jeans",
-                price:"$69.00"
-            },{
-                product_id:"10",
-                image:Mens10,
-                name:"Baggy Jeans",
-                price:"$69.00"
-            },{
-                product_id:"11",
-                image:Mens11,
-                name:"Baggy Jeans",
-                price:"$69.00"
-            },{
-                product_id:"12",
-                image:Mens12,
-                name:"Baggy Jeans",
-                price:"$69.00"
-            },{
-                product_id:"13",
-                image:Mens13,
-                name:"Baggy Jeans",
-                price:"$69.00"
-            },{
-                product_id:"14",
-                image:Mens14,
-                name:"Baggy Jeans",
-                price:"$69.00"
-            },{
-                product_id:"15",
-                image:Mens15,
-                name:"Baggy Jeans",
-                price:"$69.00"
-            },{
-                product_id:"16",
-                image:Mens16,
-                name:"Baggy Jeans",
-                price:"$69.00"
-            },{
-                product_id:"17",
-                image:Mens17,
-                name:"Baggy Jeans",
-                price:"$69.00"
-            },{
-                product_id:"18",
-                image:Mens18,
-                name:"Baggy Jeans",
-                price:"$69.00"
-            },{
-                product_id:"19",
-                image:Mens19,
-                name:"Baggy Jeans",
-                price:"$69.00"
-            },
-            {
-                product_id:"20",
-                image:Mens20,
-                name:"Baggy Jeans",
-                price:"$69.00"
-            },
-        ]
+        backgroundImage: HeroImageBg1,
+        productsCategories: {
+            Mens: [
+                {
+                    product_id: "1",
+                    image: Mens1,
+                    name: "Dark florish onepiece",
+                    price: "$95.00"
+                }, {
+                    product_id: "2",
+                    image: Mens2,
+                    name: "Oversize t shirt",
+                    price: "$95.00"
+                }, {
+                    product_id: "3",
+                    image: Mens3,
+                    name: "Skirt",
+                    price: "$58.00"
+                }, {
+                    product_id: "4",
+                    image: Mens4,
+                    name: "Baggy Jeans",
+                    price: "$69.00"
+                }, {
+                    product_id: "5",
+                    image: Mens5,
+                    name: "Baggy Jeans",
+                    price: "$69.00"
+                }, {
+                    product_id: "6",
+                    image: Mens6,
+                    name: "Baggy Jeans",
+                    price: "$69.00"
+                }, {
+                    product_id: "7",
+                    image: Mens7,
+                    name: "Baggy Jeans",
+                    price: "$69.00"
+                }, {
+                    product_id: "8",
+                    image: Mens8,
+                    name: "Baggy Jeans",
+                    price: "$69.00"
+                }, {
+                    product_id: "9",
+                    image: Mens9,
+                    name: "Baggy Jeans",
+                    price: "$69.00"
+                }, {
+                    product_id: "10",
+                    image: Mens10,
+                    name: "Baggy Jeans",
+                    price: "$69.00"
+                }, {
+                    product_id: "11",
+                    image: Mens11,
+                    name: "Baggy Jeans",
+                    price: "$69.00"
+                }, {
+                    product_id: "12",
+                    image: Mens12,
+                    name: "Baggy Jeans",
+                    price: "$69.00"
+                }, {
+                    product_id: "13",
+                    image: Mens13,
+                    name: "Baggy Jeans",
+                    price: "$69.00"
+                }, {
+                    product_id: "14",
+                    image: Mens14,
+                    name: "Baggy Jeans",
+                    price: "$69.00"
+                }, {
+                    product_id: "15",
+                    image: Mens15,
+                    name: "Baggy Jeans",
+                    price: "$69.00"
+                }, {
+                    product_id: "16",
+                    image: Mens16,
+                    name: "Baggy Jeans",
+                    price: "$69.00"
+                }, {
+                    product_id: "17",
+                    image: Mens17,
+                    name: "Baggy Jeans",
+                    price: "$69.00"
+                }, {
+                    product_id: "18",
+                    image: Mens18,
+                    name: "Baggy Jeans",
+                    price: "$69.00"
+                }, {
+                    product_id: "19",
+                    image: Mens19,
+                    name: "Baggy Jeans",
+                    price: "$69.00"
+                },
+                {
+                    product_id: "20",
+                    image: Mens20,
+                    name: "Baggy Jeans",
+                    price: "$69.00"
+                },
+            ],
+            Womens: [
+                {
+                    product_id: "1",
+                    image: Womens1,
+                    name: "Dark florish onepiece",
+                    price: "$95.00"
+                }, {
+                    product_id: "2",
+                    image: Womens2,
+                    name: "Oversize t shirt",
+                    price: "$95.00"
+                }, {
+                    product_id: "3",
+                    image: Womens3,
+                    name: "Skirt",
+                    price: "$58.00"
+                }, {
+                    product_id: "4",
+                    image: Womens4,
+                    name: "Baggy Jeans",
+                    price: "$69.00"
+                }, {
+                    product_id: "5",
+                    image: Womens5,
+                    name: "Baggy Jeans",
+                    price: "$69.00"
+                }, {
+                    product_id: "6",
+                    image: Womens6,
+                    name: "Baggy Jeans",
+                    price: "$69.00"
+                }, {
+                    product_id: "7",
+                    image: Womens7,
+                    name: "Baggy Jeans",
+                    price: "$69.00"
+                }, {
+                    product_id: "8",
+                    image: Womens8,
+                    name: "Baggy Jeans",
+                    price: "$69.00"
+                }, {
+                    product_id: "9",
+                    image: Womens9,
+                    name: "Baggy Jeans",
+                    price: "$69.00"
+                }, {
+                    product_id: "10",
+                    image: Womens10,
+                    name: "Baggy Jeans",
+                    price: "$69.00"
+                }, {
+                    product_id: "11",
+                    image: Womens11,
+                    name: "Baggy Jeans",
+                    price: "$69.00"
+                }, {
+                    product_id: "12",
+                    image: Womens12,
+                    name: "Baggy Jeans",
+                    price: "$69.00"
+                }, {
+                    product_id: "13",
+                    image: Womens13,
+                    name: "Baggy Jeans",
+                    price: "$69.00"
+                }, {
+                    product_id: "14",
+                    image: Womens14,
+                    name: "Baggy Jeans",
+                    price: "$69.00"
+                }, {
+                    product_id: "15",
+                    image: Womens15,
+                    name: "Baggy Jeans",
+                    price: "$69.00"
+                }, {
+                    product_id: "16",
+                    image: Womens16,
+                    name: "Baggy Jeans",
+                    price: "$69.00"
+                }, {
+                    product_id: "17",
+                    image: Womens17,
+                    name: "Baggy Jeans",
+                    price: "$69.00"
+                }, {
+                    product_id: "18",
+                    image: Womens18,
+                    name: "Baggy Jeans",
+                    price: "$69.00"
+                }, {
+                    product_id: "19",
+                    image: Womens19,
+                    name: "Baggy Jeans",
+                    price: "$69.00"
+                },
+                {
+                    product_id: "20",
+                    image: Womens20,
+                    name: "Baggy Jeans",
+                    price: "$69.00"
+                },
+            ],
+            Kids: [
+                {
+                    product_id: "1",
+                    image: Kids1,
+                    name: "Dark florish onepiece",
+                    price: "$95.00"
+                }, {
+                    product_id: "2",
+                    image: Kids2,
+                    name: "Oversize t shirt",
+                    price: "$95.00"
+                }, {
+                    product_id: "3",
+                    image: Kids3,
+                    name: "Skirt",
+                    price: "$58.00"
+                }, {
+                    product_id: "4",
+                    image: Kids4,
+                    name: "Baggy Jeans",
+                    price: "$69.00"
+                }, {
+                    product_id: "5",
+                    image: Kids5,
+                    name: "Baggy Jeans",
+                    price: "$69.00"
+                }, {
+                    product_id: "6",
+                    image: Kids6,
+                    name: "Baggy Jeans",
+                    price: "$69.00"
+                }, {
+                    product_id: "7",
+                    image: Kids7,
+                    name: "Baggy Jeans",
+                    price: "$69.00"
+                }, {
+                    product_id: "8",
+                    image: Kids8,
+                    name: "Baggy Jeans",
+                    price: "$69.00"
+                }, {
+                    product_id: "9",
+                    image: Kids9,
+                    name: "Baggy Jeans",
+                    price: "$69.00"
+                }, {
+                    product_id: "10",
+                    image: Kids10,
+                    name: "Baggy Jeans",
+                    price: "$69.00"
+                }, {
+                    product_id: "11",
+                    image: Kids11,
+                    name: "Baggy Jeans",
+                    price: "$69.00"
+                }, {
+                    product_id: "12",
+                    image: Kids12,
+                    name: "Baggy Jeans",
+                    price: "$69.00"
+                }, {
+                    product_id: "13",
+                    image: Kids13,
+                    name: "Baggy Jeans",
+                    price: "$69.00"
+                }, {
+                    product_id: "14",
+                    image: Kids14,
+                    name: "Baggy Jeans",
+                    price: "$69.00"
+                }, {
+                    product_id: "15",
+                    image: Kids15,
+                    name: "Baggy Jeans",
+                    price: "$69.00"
+                }, {
+                    product_id: "16",
+                    image: Kids16,
+                    name: "Baggy Jeans",
+                    price: "$69.00"
+                }, {
+                    product_id: "17",
+                    image: Kids17,
+                    name: "Baggy Jeans",
+                    price: "$69.00"
+                }, {
+                    product_id: "18",
+                    image: Kids18,
+                    name: "Baggy Jeans",
+                    price: "$69.00"
+                }, {
+                    product_id: "19",
+                    image: Kids19,
+                    name: "Baggy Jeans",
+                    price: "$69.00"
+                },
+                {
+                    product_id: "20",
+                    image: Kids20,
+                    name: "Baggy Jeans",
+                    price: "$69.00"
+                },
+            ],
+        }
     },
+  
     {
-        title: "Kids",
-        categoryKey: "kids",
-        backgroundImage:HeroImageBg2,
-        products:[
-            {
-                product_id:"Kids1",
-                image:Kids1,
-                name:"Kids",
-                price:"$95.00"
-            },{
-                product_id:"Kids2",
-                image:Kids2,
-                name:"OKids",
-                price:"$95.00"
-            },{
-                product_id:"3",
-                image:Kids3,
-                name:"Kids",
-                price:"$58.00"
-            },{
-                product_id:"4",
-                image:Kids4,
-                name:"Kids",
-                price:"$69.00"
-            },{
-                product_id:"5",
-                image:Kids5,
-                name:"Kids",
-                price:"$69.00"
-            },{
-                product_id:"6",
-                image:Kids6,
-                name:"Kids",
-                price:"$69.00"
-            },{
-                product_id:"7",
-                image:Kids7,
-                name:"Kids",
-                price:"$69.00"
-            },{
-                product_id:"8",
-                image:Kids8,
-                name:"Kids",
-                price:"$69.00"
-            },{
-                product_id:"9",
-                image:Kids9,
-                name:"Kids",
-                price:"$69.00"
-            },{
-                product_id:"10",
-                image:Kids10,
-                name:"Kids",
-                price:"$69.00"
-            },{
-                product_id:"11",
-                image:Kids11,
-                name:"Kids",
-                price:"$69.00"
-            },{
-                product_id:"12",
-                image:Kids12,
-                name:"Kids",
-                price:"$69.00"
-            },{
-                product_id:"13",
-                image:Kids13,
-                name:"Kids",
-                price:"$69.00"
-            },{
-                product_id:"14",
-                image:Kids14,
-                name:"Kids",
-                price:"$69.00"
-            },{
-                product_id:"15",
-                image:Kids15,
-                name:"Kids",
-                price:"$69.00"
-            },{
-                product_id:"16",
-                image:Kids16,
-                name:"Kids",
-                price:"$69.00"
-            },{
-                product_id:"17",
-                image:Kids17,
-                name:"Kids",
-                price:"$69.00"
-            },{
-                product_id:"18",
-                image:Kids18,
-                name:"Kids",
-                price:"$69.00"
-            },{
-                product_id:"19",
-                image:Kids19,
-                name:"Kids",
-                price:"$69.00"
-            },
-            {
-                product_id:"20",
-                image:Kids20,
-                name:"Kids",
-                price:"$69.00"
-            },
-        ]
-
-    },
-    {
-        title: "Toys",
+        title: "TOYS",
         categoryKey: "toys",
-        backgroundImage:HeroImageBg3,
-        products:[
-            {
-                product_id:"Toys1",
-                image:Toys1,
-                name:"Toys",
-                price:"$95.00"
-            },{
-                product_id:"Kids2",
-                image:Toys2,
-                name:"Toys",
-                price:"$95.00"
-            },{
-                product_id:"3",
-                image:Toys3,
-                name:"Toys",
-                price:"$58.00"
-            },{
-                product_id:"4",
-                image:Toys4,
-                name:"Toys",
-                price:"$69.00"
-            },{
-                product_id:"5",
-                image:Toys5,
-                name:"Toys",
-                price:"$69.00"
-            },{
-                product_id:"6",
-                image:Toys6,
-                name:"Toys",
-                price:"$69.00"
-            },{
-                product_id:"7",
-                image:Toys7,
-                name:"Toys",
-                price:"$69.00"
-            },{
-                product_id:"8",
-                image:Toys8,
-                name:"Toys",
-                price:"$69.00"
-            },{
-                product_id:"9",
-                image:Toys9,
-                name:"Toys",
-                price:"$69.00"
-            },{
-                product_id:"10",
-                image:Toys10,
-                name:"Toys",
-                price:"$69.00"
-            },{
-                product_id:"11",
-                image:Toys11,
-                name:"Toys",
-                price:"$69.00"
-            },{
-                product_id:"12",
-                image:Toys12,
-                name:"Toys",
-                price:"$69.00"
-            },{
-                product_id:"13",
-                image:Toys13,
-                name:"Toys",
-                price:"$69.00"
-            },{
-                product_id:"14",
-                image:Toys14,
-                name:"Toys",
-                price:"$69.00"
-            },{
-                product_id:"15",
-                image:Toys15,
-                name:"Toys",
-                price:"$69.00"
-            },{
-                product_id:"16",
-                image:Toys16,
-                name:"Toys",
-                price:"$69.00"
-            },{
-                product_id:"17",
-                image:Toys17,
-                name:"Toys",
-                price:"$69.00"
-            },{
-                product_id:"18",
-                image:Toys18,
-                name:"Toys",
-                price:"$69.00"
-            },{
-                product_id:"19",
-                image:Toys19,
-                name:"Toys",
-                price:"$69.00"
-            },
-            {
-                product_id:"20",
-                image:Toys20,
-                name:"Toys",
-                price:"$69.00"
-            },
-        ]
+        backgroundImage: HeroImageBg3,
+        productsCategories: {
+            Toys: [
+                {
+                    product_id: "Toys1",
+                    image: Toys1,
+                    name: "Toys",
+                    price: "$95.00"
+                }, {
+                    product_id: "Kids2",
+                    image: Toys2,
+                    name: "Toys",
+                    price: "$95.00"
+                }, {
+                    product_id: "3",
+                    image: Toys3,
+                    name: "Toys",
+                    price: "$58.00"
+                }, {
+                    product_id: "4",
+                    image: Toys4,
+                    name: "Toys",
+                    price: "$69.00"
+                }, {
+                    product_id: "5",
+                    image: Toys5,
+                    name: "Toys",
+                    price: "$69.00"
+                }, {
+                    product_id: "6",
+                    image: Toys6,
+                    name: "Toys",
+                    price: "$69.00"
+                }, {
+                    product_id: "7",
+                    image: Toys7,
+                    name: "Toys",
+                    price: "$69.00"
+                }, {
+                    product_id: "8",
+                    image: Toys8,
+                    name: "Toys",
+                    price: "$69.00"
+                }, {
+                    product_id: "9",
+                    image: Toys9,
+                    name: "Toys",
+                    price: "$69.00"
+                }, {
+                    product_id: "10",
+                    image: Toys10,
+                    name: "Toys",
+                    price: "$69.00"
+                }, {
+                    product_id: "11",
+                    image: Toys11,
+                    name: "Toys",
+                    price: "$69.00"
+                }, {
+                    product_id: "12",
+                    image: Toys12,
+                    name: "Toys",
+                    price: "$69.00"
+                }, {
+                    product_id: "13",
+                    image: Toys13,
+                    name: "Toys",
+                    price: "$69.00"
+                }, {
+                    product_id: "14",
+                    image: Toys14,
+                    name: "Toys",
+                    price: "$69.00"
+                }, {
+                    product_id: "15",
+                    image: Toys15,
+                    name: "Toys",
+                    price: "$69.00"
+                }, {
+                    product_id: "16",
+                    image: Toys16,
+                    name: "Toys",
+                    price: "$69.00"
+                }, {
+                    product_id: "17",
+                    image: Toys17,
+                    name: "Toys",
+                    price: "$69.00"
+                }, {
+                    product_id: "18",
+                    image: Toys18,
+                    name: "Toys",
+                    price: "$69.00"
+                }, {
+                    product_id: "19",
+                    image: Toys19,
+                    name: "Toys",
+                    price: "$69.00"
+                },
+                {
+                    product_id: "20",
+                    image: Toys20,
+                    name: "Toys",
+                    price: "$69.00"
+                },
+            ]
 
+        }
     },
     {
-        title: "Office Supplies",
+        title: "OFFICE SUPPLIES",
         categoryKey: "officeSupplies",
-        backgroundImage:HeroImageBg4,
-        products:[
-            {
-                product_id:"Kids1",
-                image:OfficeSupplies1,
-                name:"Office Supplies",
-                price:"$95.00"
-            },{
-                product_id:"Kids2",
-                image:OfficeSupplies2,
-                name:"Office Supplies",
-                price:"$95.00"
-            },{
-                product_id:"3",
-                image:OfficeSupplies3,
-                name:"Office Supplies",
-                price:"$58.00"
-            },{
-                product_id:"4",
-                image:OfficeSupplies4,
-                name:"Office Supplies",
-                price:"$69.00"
-            },{
-                product_id:"5",
-                image:OfficeSupplies5,
-                name:"Office Supplies",
-                price:"$69.00"
-            },{
-                product_id:"6",
-                image:OfficeSupplies6,
-                name:"Office Supplies",
-                price:"$69.00"
-            },{
-                product_id:"7",
-                image:OfficeSupplies7,
-                name:"Office Supplies",
-                price:"$69.00"
-            },{
-                product_id:"8",
-                image:OfficeSupplies8,
-                name:"Office Supplies",
-                price:"$69.00"
-            },{
-                product_id:"9",
-                image:OfficeSupplies9,
-                name:"Office Supplies",
-                price:"$69.00"
-            },{
-                product_id:"10",
-                image:OfficeSupplies10,
-                name:"Office Supplies",
-                price:"$69.00"
-            },{
-                product_id:"11",
-                image:OfficeSupplies11,
-                name:"Office Supplies",
-                price:"$69.00"
-            },{
-                product_id:"12",
-                image:OfficeSupplies12,
-                name:"Office Supplies",
-                price:"$69.00"
-            },{
-                product_id:"13",
-                image:OfficeSupplies13,
-                name:"Office Supplies",
-                price:"$69.00"
-            },{
-                product_id:"14",
-                image:OfficeSupplies14,
-                name:"Office Supplies",
-                price:"$69.00"
-            },{
-                product_id:"15",
-                image:OfficeSupplies15,
-                name:"Office Supplies",
-                price:"$69.00"
-            },{
-                product_id:"16",
-                image:OfficeSupplies16,
-                name:"Office Supplies",
-                price:"$69.00"
-            },{
-                product_id:"17",
-                image:OfficeSupplies17,
-                name:"Office Supplies",
-                price:"$69.00"
-            },{
-                product_id:"18",
-                image:OfficeSupplies18,
-                name:" Office Supplies",
-                price:"$69.00"
-            },{
-                product_id:"19",
-                image:OfficeSupplies19,
-                name:"Office Supplies",
-                price:"$69.00"
-            },
-            {
-                product_id:"20",
-                image:OfficeSupplies20,
-                name:"Office Supplies",
-                price:"$69.00"
-            },
-        ]
+        backgroundImage: HeroImageBg2,
+        productsCategories: {
+            OfficeSupplies: [
+                {
+                    product_id: "Kids1",
+                    image: OfficeSupplies1,
+                    name: "Office Supplies",
+                    price: "$95.00"
+                }, {
+                    product_id: "Kids2",
+                    image: OfficeSupplies2,
+                    name: "Office Supplies",
+                    price: "$95.00"
+                }, {
+                    product_id: "3",
+                    image: OfficeSupplies3,
+                    name: "Office Supplies",
+                    price: "$58.00"
+                }, {
+                    product_id: "4",
+                    image: OfficeSupplies4,
+                    name: "Office Supplies",
+                    price: "$69.00"
+                }, {
+                    product_id: "5",
+                    image: OfficeSupplies5,
+                    name: "Office Supplies",
+                    price: "$69.00"
+                }, {
+                    product_id: "6",
+                    image: OfficeSupplies6,
+                    name: "Office Supplies",
+                    price: "$69.00"
+                }, {
+                    product_id: "7",
+                    image: OfficeSupplies7,
+                    name: "Office Supplies",
+                    price: "$69.00"
+                }, {
+                    product_id: "8",
+                    image: OfficeSupplies8,
+                    name: "Office Supplies",
+                    price: "$69.00"
+                }, {
+                    product_id: "9",
+                    image: OfficeSupplies9,
+                    name: "Office Supplies",
+                    price: "$69.00"
+                }, {
+                    product_id: "10",
+                    image: OfficeSupplies10,
+                    name: "Office Supplies",
+                    price: "$69.00"
+                }, {
+                    product_id: "11",
+                    image: OfficeSupplies11,
+                    name: "Office Supplies",
+                    price: "$69.00"
+                }, {
+                    product_id: "12",
+                    image: OfficeSupplies12,
+                    name: "Office Supplies",
+                    price: "$69.00"
+                }, {
+                    product_id: "13",
+                    image: OfficeSupplies13,
+                    name: "Office Supplies",
+                    price: "$69.00"
+                }, {
+                    product_id: "14",
+                    image: OfficeSupplies14,
+                    name: "Office Supplies",
+                    price: "$69.00"
+                }, {
+                    product_id: "15",
+                    image: OfficeSupplies15,
+                    name: "Office Supplies",
+                    price: "$69.00"
+                }, {
+                    product_id: "16",
+                    image: OfficeSupplies16,
+                    name: "Office Supplies",
+                    price: "$69.00"
+                }, {
+                    product_id: "17",
+                    image: OfficeSupplies17,
+                    name: "Office Supplies",
+                    price: "$69.00"
+                }, {
+                    product_id: "18",
+                    image: OfficeSupplies18,
+                    name: " Office Supplies",
+                    price: "$69.00"
+                }, {
+                    product_id: "19",
+                    image: OfficeSupplies19,
+                    name: "Office Supplies",
+                    price: "$69.00"
+                },
+                {
+                    product_id: "20",
+                    image: OfficeSupplies20,
+                    name: "Office Supplies",
+                    price: "$69.00"
+                },
+            ]
+        }
     }
 ];
 

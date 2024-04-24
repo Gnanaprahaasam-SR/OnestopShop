@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/OnestopShop/static/css/main.8f3bb2c6.css",
-    "main.js": "/OnestopShop/static/js/main.416afd77.js",
+    "main.css": "/OnestopShop/static/css/main.c1a58c9e.css",
+    "main.js": "/OnestopShop/static/js/main.283e763b.js",
     "static/media/HomeBannerBackground2.png": "/OnestopShop/static/media/HomeBannerBackground2.0d6328813120749abd22.png",
     "static/media/HeroImageBg1.png": "/OnestopShop/static/media/HeroImageBg1.7fcdf09b4695e625389d.png",
     "static/media/HeroImageBg4.png": "/OnestopShop/static/media/HeroImageBg4.9e22df30d8a977564a2b.png",
@@ -77,11 +77,11 @@
     "index.html": "/OnestopShop/index.html",
     "static/media/akar-icons_calendar.svg": "/OnestopShop/static/media/akar-icons_calendar.947b5045b551d41a46696a244b943df6.svg",
     "static/media/akar-icons_arrow-cycle.svg": "/OnestopShop/static/media/akar-icons_arrow-cycle.4e0e726ae347813b32d114986ed5b74d.svg",
-    "main.8f3bb2c6.css.map": "/OnestopShop/static/css/main.8f3bb2c6.css.map",
-    "main.416afd77.js.map": "/OnestopShop/static/js/main.416afd77.js.map"
+    "main.c1a58c9e.css.map": "/OnestopShop/static/css/main.c1a58c9e.css.map",
+    "main.283e763b.js.map": "/OnestopShop/static/js/main.283e763b.js.map"
   },
   "entrypoints": [
-    "static/css/main.8f3bb2c6.css",
-    "static/js/main.416afd77.js"
+    "static/css/main.c1a58c9e.css",
+    "static/js/main.283e763b.js"
   ]
 }

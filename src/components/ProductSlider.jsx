@@ -57,13 +57,14 @@ function ProductSlider({ data }) {
                     {data?.products.map((product) => (
                         <div key={product.product_id} className='d-flex flex-column align-items-center p-4 product-card'>
                             <Link className='text-decoration-none' to={`/product`}>
-                                <div className='d-flex flex-column'>
-                                    <img
-                                        src={product.image}
-                                        alt={product.name}
-                                        width="100%"
-                                        height="100%"
-                                    />
+                                <div className='d-flex flex-column '>
+                                    <div className='w-100' style={{aspectRatio:"3/4",overflow:"hidden"}}>
+                                        <img
+                                            src={product.image}
+                                            alt={product.name}
+                                            className='w-100 h-100 object-fit-cover'
+                                        />
+                                    </div>
                                     <div className="product-btns ">
                                         <button className="secondary-btn">ADD TO CART</button>
                                         <button className="product-icon"><img src={WishListIcon} alt='WishListIcon' /></button>
@@ -71,7 +72,7 @@ function ProductSlider({ data }) {
                                     </div>
 
                                     <h5 className='product-title'>{product.name}</h5>
-                                    <p className='product-price'>{product.price}</p>
+                                    <p className='product-price'>&#8377;{product.price}</p>
                                 </div>
                             </Link>
                         </div>

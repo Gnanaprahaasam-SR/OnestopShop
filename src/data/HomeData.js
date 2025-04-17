@@ -1,32 +1,16 @@
-import { AutorenewOutlined, CalendarToday, CardGiftcardOutlined, Category, Instagram, ShoppingBagOutlined } from "@mui/icons-material";
-import CarouselImage1 from "../assets/carouselImage1.png"
-import CarouselImage2 from "../assets/carouselImage2.png"
-import CarouselImage3 from "../assets/carouselImage3.png"
+import {  Instagram, } from "@mui/icons-material";
+
 import calendarIcon from "../assets/ServicesIcons/calendarIcon.png"
 import giftIcon from "../assets/ServicesIcons/giftIcon.png"
 import returnIcon from "../assets/ServicesIcons/returnIcon.png"
 import shoppingIcon from "../assets/ServicesIcons/shoppingIcon.png"
-import clothing from "../assets/Categories/clothing.png"
-import homeTextiles from "../assets/Categories/homeTextiles.png"
-import officeSupplies from "../assets/Categories/officeSupplies.png"
-import toys from "../assets/Categories/toys.png"
+
 import CollectionsImage1 from "../assets/Collections/CollectionsImage1.png"
 import CollectionsImage2 from "../assets/Collections/CollectionsImage2.png"
 
 import HomeBannerImage1 from "../assets/HomeBanner.png"
 import HomeBannerBgImage2 from "../assets/HomeBannerBackground2.png"
 import HomeBannerImage2 from "../assets/HomeBanner2.png"
-
-
-import ProductImage5 from "../assets/YouMayAlsoLike/Product1.png"
-import ProductImage6 from "../assets/YouMayAlsoLike/Product2.png"
-import ProductImage7 from "../assets/YouMayAlsoLike/Product3.png"
-import ProductImage8 from "../assets/YouMayAlsoLike/Product4.png"
-
-import ProductImage1 from "../assets/BestSellingItems/Image1.png"
-import ProductImage2 from "../assets/BestSellingItems/Image2.png"
-import ProductImage3 from "../assets/BestSellingItems/Image3.png"
-import ProductImage4 from "../assets/BestSellingItems/Image4.png"
 
 import BlogImage1 from "../assets/Blogs/Image1.png"
 import BlogImage2 from "../assets/Blogs/Image2.png"
@@ -46,14 +30,37 @@ import FollowUsImage5 from "../assets/FollowUs/5.png"
 import FollowUsImage6 from "../assets/FollowUs/6.png"
 
 
+import bedRoomCategory from "../images/Home/bedRoom.jpg";
+import bathRoomCategory from "../images/Home/Bathroom.jpg";
+import kitchenRoomCategory from "../images/Home/kitchen.jpg";
+import livingRoomCategory from "../images/Home/living-room.jpg"
 
+
+import bestseller1 from "../images/BestSeller/bathtextile.webp";
+import bestseller2 from "../images/BestSeller/bedtextile.webp";
+import bestseller3 from "../images/BestSeller/curtains.webp";
+import bestseller4 from "../images/BestSeller/ironing_board_Cover.webp";
+import bestseller5 from "../images/BestSeller/girl_cloth.jpeg";
+import bestseller6 from "../images/BestSeller/sofacovers.jpeg"
+import bestseller7 from "../images/BestSeller/tablecloths.jpeg";
+
+import Slide1 from "../images/Home/Slide1.jpg";
+import Slide2 from "../images/Home/Slide2.jpg";
+import Slide3 from "../images/Home/Slide3.jpg";
+
+
+import bathroom from "../images/Category/bathrobe.webp";
+import blankets from "../images/Category/blankets.jpeg";
+import carpet from "../images/Category/carpet.jpeg";
+import chairPads from "../images/Category/chairPads.avif";
+import cover from "../images/Category/cover.webp";
 
 const homeData = {
     CarouselSection:[
         {
             title:"NEW COLLECTIONS",
             description:"Scelerisque duis aliquam qui lorem ipsum dolor amet, consectetur adipiscing elit. ",
-            image:CarouselImage1,
+            image:Slide2,
             button:"SHOP COLLECTION",
             link:"/",
             backgroundRadialGradient:[
@@ -63,7 +70,7 @@ const homeData = {
         },  {
             title:"NEW COLLECTIONS",
             description:"Scelerisque duis aliquam qui lorem ipsum dolor amet, consectetur adipiscing elit. ",
-            image:CarouselImage2,
+            image:Slide3,
             button:"SHOP COLLECTION",
             link:"/",
             backgroundRadialGradient:[
@@ -73,7 +80,7 @@ const homeData = {
         },  {
             title:"NEW COLLECTIONS",
             description:"Scelerisque duis aliquam qui lorem ipsum dolor amet, consectetur adipiscing elit. ",
-            image:CarouselImage3,
+            image:Slide1,
             button:"SHOP COLLECTION",
             link:"/",
             backgroundRadialGradient:[
@@ -104,24 +111,24 @@ const homeData = {
     ],
     CategorySection:{
         title:"CATEGORIES",
-        clothing:{
-            image:clothing,
-            button:"SHOP CLOTHING",
+        bedRoom:{
+            image:bedRoomCategory,
+            button:"BED ROOM TEXTILES",
             link:"/clothing"
         },
-        homeTextiles:{
-            image:homeTextiles,
-            button:"SHOP HOME TEXTILES",
+        bathRoom:{
+            image:bathRoomCategory,
+            button:"BATH ROOM TEXTILES",
             link:"/homeTextiles"
         },
-        officeSupplies:{
-            image:officeSupplies,
-            button:"SHOP OFFICE SUPPLIES",
+        kitchenRoom:{
+            image:kitchenRoomCategory,
+            button:"kITCHEN & DINING TEXTILES",
             link:"/officeSupplies"
         },
-        toys:{
-            image:toys,
-            button:"SHOP TOYS",
+        livingRoom:{
+            image:livingRoomCategory,
+            button:"LIVING ROOM TEXTILES",
             link:"/toys"
         }
     },
@@ -152,29 +159,39 @@ const homeData = {
     },
     BestSellingItemsSection:{
         title:"BEST SELLING ITEMS",
-        button:"VIEW ALL PRODUCTS",
-        link:"/product",
+        button:"VIEW ALL CATEGORIES",
+        link:"/shop",
         products:[
             {
                 product_id:"1",
-                image:ProductImage1,
-                name:"Dark florish onepiece",
-                price:"$95.00"
+                image:bestseller1,
+                name:"Bath textile",
+                price:"950.00"
             },{
                 product_id:"2",
-                image:ProductImage2,
-                name:"Oversize t shirt",
-                price:"$95.00"
+                image:bestseller2,
+                name:"Bed textile",
+                price:"1200.00"
             },{
                 product_id:"3",
-                image:ProductImage3,
-                name:"Skirt",
-                price:"$58.00"
+                image:bestseller3,
+                name:"Curtains",
+                price:"580.00"
             },{
                 product_id:"4",
-                image:ProductImage4,
-                name:"Baggy Jeans",
-                price:"$69.00"
+                image:bestseller4,
+                name:"Ironing board cover",
+                price:"120.00"
+            },{
+                product_id:"5",
+                image:bestseller5,
+                name:"Kids clothing",
+                price:"700.00"
+            },{
+                product_id:"6",
+                image:bestseller6,
+                name:"Sofa cover",
+                price:"690.00"
             },
         ]
     },
@@ -214,24 +231,24 @@ const homeData = {
         products:[
             {
                 product_id:"1",
-                image:ProductImage5,
-                name:"Dark florish onepiece",
-                price:"$95.00"
+                image:bathroom,
+                name:"Bathrobe",
+                price:"950.00"
             },{
                 product_id:"2",
-                image:ProductImage6,
-                name:"Oversize t shirt",
-                price:"$95.00"
+                image:blankets,
+                name:"Blankets",
+                price:"1050.00"
             },{
                 product_id:"3",
-                image:ProductImage7,
-                name:"Skirt",
-                price:"$58.00"
+                image:carpet,
+                name:"carpet",
+                price:"850.00"
             },{
                 product_id:"4",
-                image:ProductImage8,
-                name:"Baggy Jeans",
-                price:"$69.00"
+                image:cover,
+                name:"Rugs",
+                price:"690.00"
             },
         ]
     },

@@ -23,7 +23,7 @@ const Description = () => {
             <div className="container ">
                 <span className="icon mb-4">Home &#10148; {"Oversized t shirt"}</span>
                 <h5 className="mb-5 page_title">{description?.pageTitle}</h5>
-                <div className="row g-3 description">
+                <div className="row g-3 product-description" style={{fontFamily:'"Manrope", sans-serif'}}>
                     <div className="col-md-5 col-sm-12 col-12 ">
                         <img src={description?.product?.image} alt="t-shirt" width="100%" />
                     </div>
